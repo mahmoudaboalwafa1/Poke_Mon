@@ -1,0 +1,45 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("./static/land.png");
+  background-size: cover;
+  overflow: hidden;
+}
+
+.player {
+  width: 80px;
+  height: 100px;
+  background-image: url("./static/player_back.png");
+  background-size: 220px 100px;
+  background-position-x: 0%;
+  position: fixed;
+  z-index: 1000;
+}
+
+img.ball {
+  width: 30px;
+  position: fixed;
+}
+
+img.grass {
+  width: 60px;
+  position: fixed;
+}
+
+@keyframes walk {
+  0% {
+    background-size: 220px 100px;
+    background-position-x: 0%;
+  }
+  50% {
+    background-size: 220px 100px;
+    background-position-x: 55%;
+  }
+  100% {
+    background-size: 220px 100px;
+    background-position-x: 100%;
+  }
+}
